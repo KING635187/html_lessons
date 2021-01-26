@@ -1,0 +1,7 @@
+.p-with-background {
+    width: 600px;
+    background-image: url('../images/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
