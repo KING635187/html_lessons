@@ -1,0 +1,65 @@
+h1 {
+    font-family: verdona;
+    font-size: 250%;
+}
+.p1 {
+    font-size: 30px;
+    border: 2px solid powderblue;
+    padding: 20px;
+    margin: 30px;
+}
+.supercar {
+    font-size: 40px;
+    color: blue;
+}
+
+/* HTML Link Colors */
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+/* Link Buttons */
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: pink;
+  }
+
+/* Create a Bookmark in HTML */
+.jamp {
+    color: white;
+}
+
+/* Animated Images */
+.angry {
+    font-size: 50px;
+    border: 2px solid white;
+    color: white;
+    width: 325px;
+    padding: 10px;
+    background-color: red;
+}
