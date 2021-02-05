@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asseds/css/style.css">
+</head>
+<body>
+    <div class="forms"><h2>HTML Forms</h2></div>
+    <hr>
+
+<!-- The <input> Element -->
+    <form action="#">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"value="Submit as Multipart/form-data">
+        <input type="reset">
+    </form>
+    <hr>
+      
+<!-- The <label> Element -->
+    <form action="#">
+    <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    <input type="submit">
+    <input type="reset">
+    </form>
+    <hr>
+
+<!-- Visible Values: -->
+    <form action="#">
+    <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="2">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+    <input type="submit">
+    <input type="reset">
+    </form>
+    <hr>
+
+<!-- The <textarea> Element -->
+    <form action="#">
+        <textarea name="message" style="width: 724px; height: 200px;" rows="10" cols="30"></textarea>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The <button> Element -->
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <hr>
+
+<!-- The <fieldset> and <legend> Elements    -->
+    <form action="#">
+        <fieldset>
+            <legend>Personalia:</legend>    
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formenctype="multipart/form-data"value="Submit as Multipart/form-data">
+            <input type="reset">
+        </fieldset>
+    </form>
+    <hr>
+
+<!-- The <datalist> Element -->
+    <form action="#">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The <output> Element -->
+    <form action="#"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Color -->
+    <form action="#">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Date -->
+    <form action="#">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Datetime-local -->
+    <form action="#">
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Email -->
+    <form action="#">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type File -->
+    <form action="#">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Month -->
+    <form action="#">
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Number -->
+    <form action="#">
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Search -->
+    <form action="#">
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Tel -->
+    <form action="#">
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <small>Format: 123-45-678</small><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Time -->
+    <form action="#">
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Url -->
+    <form action="#">
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- Input Type Week -->
+    <form action="#">
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The size Attribute -->
+    <form action="#">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50" maxlength="39"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4" maxlength="4"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"value="Submit as Multipart/form-data">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The min and max Attributes -->
+    <form action="#">
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+  
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The step Attribute -->
+    <form action="#">
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <hr>
+
+<!-- The height and width Attributes -->
+    <form action="#">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="asseds/imeges/go.png" alt="Submit" width="48" height="48">
+    </form>
+    <hr>
+  
+</body>
+</html>
