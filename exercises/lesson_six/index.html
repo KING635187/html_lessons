@@ -13,7 +13,7 @@
 <!-- The <input> Element -->
     <form action="#">
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <input type="text" id="fname" name="fname"><br><br>
         <input type="submit" value="Submit">
         <input type="submit" formenctype="multipart/form-data"value="Submit as Multipart/form-data">
         <input type="reset">
@@ -37,7 +37,7 @@
 <!-- Visible Values: -->
     <form action="#">
     <label for="cars">Choose a car:</label>
-        <select id="cars" name="cars" size="2">
+        <select id="cars" name="cars" size="2" multiple>
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
@@ -50,7 +50,7 @@
 
 <!-- The <textarea> Element -->
     <form action="#">
-        <textarea name="message" style="width: 724px; height: 200px;" rows="10" cols="30"></textarea>
+        <textarea name="message" style="width: 724px; height: 200px;" rows="10" cols="30" autofocus></textarea>
         <br><br>
         <input type="submit">
         <input type="reset">
@@ -96,7 +96,7 @@
         oninput="x.value=parseInt(a.value)+parseInt(b.value)">
         0
         <input type="range" id="a" name="a" value="50">
-        100 +
+        +
         <input type="number" id="b" name="b" value="50">
         =
         <output name="x" for="a b"></output>
