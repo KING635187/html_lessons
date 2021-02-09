@@ -6,6 +6,13 @@ ctx.beginPath();
 ctx.arc(95,50,40,0,2*Math.PI);
 ctx.stroke();
 
+
+
+var youCanvas = document.getElementById("youCanvas");
+var you = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+
 //var c = document.getElementById("youCanvas");
 //var ctx = c.getContext("2d");
 // Create gradient
