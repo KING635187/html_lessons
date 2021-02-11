@@ -31,7 +31,7 @@ function getLocation() {
     } else {
         locationBox.innerText = "Geolocation is not supported by this browser.";
     }
-}
+}   
 
 function showPosition(position) {
     locationBox.innerHTML = "Latitude: " + position.coords.latitude + "<br/>Longitude: " + position.coords.longitude; 
