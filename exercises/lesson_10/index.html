@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+
+    <!-- Example 1 -->
+    <svg height="30" width="200">
+        <text x="0" y="15" fill="red">I love SVG!</text>
+    </svg>
+    <hr>
+
+    <!-- Example 2 -->
+    <svg height="60" width="200">
+        <text x="0" y="15" fill="red" transform="rotate(30 20,40)">I love SVG</text>
+    </svg>
+    <hr>
+
+    <!-- Example 3 -->
+    <svg height="90" width="200">
+        <text x="10" y="20" style="fill:red;">Several lines:
+        <tspan x="10" y="45">First line.</tspan>
+        <tspan x="10" y="70">Second line.</tspan>
+        </text>
+    </svg>
+    <hr>
+
+    <!-- Example 4 -->
+    <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
+        <text x="0" y="15" fill="red">I love SVG!</text>
+        </a>
+    </svg>
+    <hr>
+
+    <!-- SVG stroke Property -->
+    <svg height="80" width="300">
+        <g fill="none">
+        <path stroke="red" d="M5 20 l215 0" />
+        <path stroke="black" d="M5 40 l215 0" />
+        <path stroke="blue" d="M5 60 l215 0" />
+        </g>
+    </svg>
+    <hr>
+
+    <!-- SVG stroke-width Property -->
+    <svg height="80" width="300">
+        <g fill="none" stroke="black">
+        <path stroke-width="2" d="M5 20 l215 0" />
+        <path stroke-width="4" d="M5 40 l215 0" />
+        <path stroke-width="6" d="M5 60 l215 0" />
+        </g>
+    </svg>
+    <hr>
+
+    <!-- SVG stroke-linecap Property -->
+    <svg height="80" width="300">
+        <g fill="none" stroke="black" stroke-width="6">
+        <path stroke-linecap="butt" d="M5 20 l215 0" />
+        <path stroke-linecap="round" d="M5 40 l215 0" />
+        <path stroke-linecap="square" d="M5 60 l215 0" />
+        </g>
+    </svg>
+    <hr>
+
+    <!-- SVG stroke-dasharray Property -->
+    <svg height="80" width="300">
+        <g fill="none" stroke="black" stroke-width="4">
+        <path stroke-dasharray="5,5" d="M5 20 l215 0" />
+        <path stroke-dasharray="10,10" d="M5 40 l215 0" />
+        <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+        </g>
+    </svg>
+    <hr>
+
+    <!-- SVG <feGaussianBlur> -->
+    <svg height="110" width="110">
+        <defs>
+            <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+            </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f1)" />
+    </svg>
+    <hr>
+
+    <!-- SVG <feOffset> -->
+    <!-- Example 1 -->
+    <svg height="120" width="120">
+        <defs>
+            <filter id="f1" x="0" y="0" width="200%" height="200%">
+                <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+            </filter>
+            </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f1)" />
+    </svg>
+    <hr>
+
+    <!-- Example 2 -->
+    <svg height="140" width="140">
+        <defs>
+        <filter id="f2" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f2)" />
+    </svg>
+    <hr>
+
+    <!-- Example 3 -->
+    <svg height="140" width="140">
+        <defs>
+        <filter id="f3" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f3)" />
+    </svg>
+    <hr>
+
+    <!-- Example 4 -->
+    <svg height="140" width="140">
+        <defs>
+        <filter id="f4" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+            <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+            values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+            <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        </defs>
+        <rect width="90" height="90" stroke="green" stroke-width="3"
+        fill="yellow" filter="url(#f4)" />
+    </svg>
+    <hr>
+
+    <!-- SVG Linear Gradient - <linearGradient> -->
+    <svg height="150" width="400">
+        <defs>
+            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">SVG</text>
+    </svg>
+    <hr>
+
+    <!-- SVG Radial Gradient - <radialGradient> -->
+    <!-- Example 1 -->
+    <svg height="150" width="500">
+        <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+            <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    </svg>
+    <hr>
+    
+    <!-- Example 2 -->
+    <svg height="150" width="500">
+    <defs>
+        <radialGradient id="grad2" cx="20%" cy="30%" r="30%" fx="50%" fy="50%">
+        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+        <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+        </radialGradient>
+    </defs>
+    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)" />
+    </svg>
+</body>
+</html>
