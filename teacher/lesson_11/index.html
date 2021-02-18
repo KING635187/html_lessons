@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <!-- SVG Text -->
+        <svg height="30" width="200">
+            <text x="0" y="15" fill="red">I love SVG!</text>
+        </svg>
+
+        <svg height="300" width="300">
+            <g fill="none" stroke="black" stroke-width="80">
+                <path stroke-linecap="butt" d="M5 20 l215 0" />
+                <path stroke-linecap="round" d="M5 120 l215 0" />
+                <path stroke-linecap="square" d="M5 220 l215 0" />
+            </g>
+        </svg>
+
+        <svg height="80" width="300">
+            <g fill="none" stroke="black" stroke-width="4">
+                <path stroke-dasharray="5,5" d="M5 20 l215 0" />
+                <path stroke-dasharray="10,10" d="M5 40 l215 0" />
+                <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+            </g>
+        </svg>
+
+        <svg width="230" height="120" xmlns="http://www.w3.org/2000/svg">
+            <filter id="blurMe">
+                <feGaussianBlur stdDeviation="5"/>
+            </filter>
+           
+            <circle cx="60" cy="60" r="50" fill="green" />
+           
+            <circle cx="170" cy="60" r="50" fill="green" filter="url(#blurMe)" />
+        </svg>
+
+        <p class="center large">Centered paragraph</p>
+
+        <div id="bg-image"></div>
+
+    </body>
+</html>
