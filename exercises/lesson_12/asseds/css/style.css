@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+}
+.p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+.boshlash {
+    padding: 100px;
+    text-align: center;
+    background-color:rgb(0, 190, 158);
+    color: white;
+}
+.link {
+    background-color: rgb(51, 51, 51);
+    padding: 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    
+}
+.link1 {
+    color: white;
+    float: right;
+}
+.me {
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(230, 230, 230);
+}
+h4 {
+    font-size: 17px;
+}
+.me1 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    height: 240px;
+    font-size: 20px;
+}
+.me2 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    font-size: 20px;
+}
+.me3 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    font-size: 20px;
+}
+.me4 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    font-size: 20px;
+}
+.title {
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    font-size: 20px;
+}
+.title1 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    height: 240px;
+}
+.title2 {
+    background-color: rgb(167, 167, 167);
+    padding: 25px;
+    width: 96%;
+    height: 240px;
+    font-size: 20px;
+}
+.tugash {
+    padding: 50px;
+    text-align: center;
+    background-color:rgb(199, 199, 199);
+    color: rgb(0, 0, 0);
+}
