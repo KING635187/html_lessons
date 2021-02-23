@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
 }
+
 .p {
     font-size: 20px;
 }
@@ -8,81 +9,116 @@ body {
 h1 {
     font-size: 50px;
 }
-.boshlash {
+
+
+/* Header starts */
+
+.header {
     padding: 100px;
     text-align: center;
     background-color:rgb(0, 190, 158);
     color: white;
 }
-.link {
+
+
+/* Navbar starts */
+
+.navbar {
     background-color: rgb(51, 51, 51);
     padding: 15px;
 }
-a {
+
+.navbar .list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar .item {
+    display: inline-block;
+}
+
+.navbar .item:last-child {
+    float: right;
+}
+
+.navbar .link {
     color: white;
     text-decoration: none;
     padding: 15px 20px;
     font-size: 20px;
-    
 }
-.link1 {
-    color: white;
-    float: right;
-}
-.me {
+
+
+/* About section starts */
+
+.about {
     padding: 20px;
     font-size: 20px;
     background-color: rgb(230, 230, 230);
 }
-h4 {
+
+.about h4 {
     font-size: 17px;
 }
-.me1 {
+
+.about .img {
     background-color: rgb(167, 167, 167);
     padding: 25px;
     width: 96%;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.about .img.large {
     height: 240px;
-    font-size: 20px;
+    margin-bottom: 0;
 }
-.me2 {
-    background-color: rgb(167, 167, 167);
-    padding: 25px;
-    width: 96%;
-    font-size: 20px;
+
+.about .img:last-child {
+    margin-bottom: 0;
 }
-.me3 {
-    background-color: rgb(167, 167, 167);
-    padding: 25px;
-    width: 96%;
-    font-size: 20px;
-}
-.me4 {
-    background-color: rgb(167, 167, 167);
-    padding: 25px;
-    width: 96%;
-    font-size: 20px;
-}
-.title {
+
+
+/* Posts section starts */
+
+.posts {
     padding: 20px;
     background-color: rgb(245, 245, 245);
     font-size: 20px;
 }
-.title1 {
+
+.posts .post {
+    margin-bottom: 48px;
+}
+
+.posts .post:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Post starts */
+
+.post .img {
     background-color: rgb(167, 167, 167);
     padding: 25px;
     width: 96%;
     height: 240px;
 }
-.title2 {
-    background-color: rgb(167, 167, 167);
-    padding: 25px;
-    width: 96%;
-    height: 240px;
-    font-size: 20px;
-}
-.tugash {
+
+
+/* Footer starts */
+
+.footer {
     padding: 50px;
     text-align: center;
     background-color:rgb(199, 199, 199);
     color: rgb(0, 0, 0);
+}
+
+
+/* Utils starts */
+
+.clearfix::after {
+    content: "";
+    clear: both;
 }
