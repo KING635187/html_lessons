@@ -1,0 +1,111 @@
+.decoration {
+text-decoration: overline;
+}
+
+.decoration1 {
+  text-decoration: line-through;
+}
+
+.decoration2 {
+  text-decoration: underline;
+}
+
+/* Text Transformation */
+p.uppercase {
+    text-transform: uppercase;
+  }
+  
+p.lowercase {
+    text-transform: lowercase;
+  }
+  
+p.capitalize {
+    text-transform: capitalize;
+  }
+
+  /* Text Indentation */
+p.indentation {
+    text-indent: 50px;
+  }
+
+/* Letter Spacing */
+.spacing {
+    letter-spacing: 3px;
+  }
+  
+.spacing1 {
+    letter-spacing: -3px;
+  }
+
+  /* Line Height */
+  p.small {
+    line-height: 0.7;
+  }
+  
+  p.big {
+    line-height: 1.8;
+  }
+
+  /* Word Spacing */
+  h1 {
+    word-spacing: 10px;
+  }
+  
+  h2 {
+    word-spacing: -5px;
+  }
+
+  /* White Space */
+  .space {
+    white-space: nowrap;
+  }
+
+  /* Text Shadow */
+  .shadow {
+    text-shadow: 2px 2px 5px red;
+  }
+
+  /* The CSS font-family Property */
+  .p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  /* Fallback Fonts */
+  .fonts{
+    font-family: Tahoma, Verdana, sans-serif;
+    }
+
+    /* Font Style */
+    p.normal {
+        font-style: normal;
+      }
+      
+      p.italic {
+        font-style: italic;
+      }
+      
+      p.oblique {
+        font-style: oblique;
+      }
+
+      /* CSS Layout - width and max-width */
+      div.ex1 {
+        width: 500px;
+        margin: auto;
+        border: 3px solid #73AD21;
+      }
+      
+      div.ex2 {
+        max-width: 500px;
+        margin: auto;
+        border: 3px solid #73AD21;
+      }
+  
