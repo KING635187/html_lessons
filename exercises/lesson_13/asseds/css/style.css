@@ -23,7 +23,7 @@ p.capitalize {
     text-transform: capitalize;
   }
 
-  /* Text Indentation */
+/* Text Indentation */
 p.indentation {
     text-indent: 50px;
   }
@@ -37,75 +37,291 @@ p.indentation {
     letter-spacing: -3px;
   }
 
-  /* Line Height */
-  p.small {
+/* Line Height */
+p.small {
     line-height: 0.7;
   }
   
-  p.big {
+p.big {
     line-height: 1.8;
   }
 
-  /* Word Spacing */
-  h1 {
+/* Word Spacing */
+h1 {
     word-spacing: 10px;
   }
   
-  h2 {
+h2 {
     word-spacing: -5px;
   }
 
-  /* White Space */
-  .space {
+/* White Space */
+.space {
     white-space: nowrap;
   }
 
-  /* Text Shadow */
-  .shadow {
+/* Text Shadow */
+.shadow {
     text-shadow: 2px 2px 5px red;
   }
 
-  /* The CSS font-family Property */
-  .p1 {
+/* The CSS font-family Property */
+.p1 {
     font-family: "Times New Roman", Times, serif;
   }
   
-  .p2 {
+.p2 {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .p3 {
+.p3 {
     font-family: "Lucida Console", "Courier New", monospace;
   }
 
-  /* Fallback Fonts */
-  .fonts{
-    font-family: Tahoma, Verdana, sans-serif;
-    }
+/* Fallback Fonts */
+.fonts{
+  font-family: Tahoma, Verdana, sans-serif;
+  }
 
-    /* Font Style */
-    p.normal {
-        font-style: normal;
-      }
-      
-      p.italic {
-        font-style: italic;
-      }
-      
-      p.oblique {
-        font-style: oblique;
-      }
+/* Font Style */
+p.normal {
+    font-style: normal;
+  }
+    
+p.italic {
+    font-style: italic;
+  }
+    
+p.oblique {
+    font-style: oblique;
+  }
 
-      /* CSS Layout - width and max-width */
-      div.ex1 {
-        width: 500px;
-        margin: auto;
-        border: 3px solid #73AD21;
-      }
+/* CSS Layout - width and max-width */
+div.ex1 {
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+  }
       
-      div.ex2 {
-        max-width: 500px;
-        margin: auto;
-        border: 3px solid #73AD21;
-      }
+div.ex2 {
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+  }
+
+/* Anchor Pseudo-classes */
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(5, 146, 0);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* Multiple Pseudo-elements */
+p.elements::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p.elements::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+/* CSS - The ::selection Pseudo-element */
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* Transparent Hover Effect */
+/* img {
+  opacity: 0.5;
+} */
+
+img:hover {
+  opacity: 0.5;
+}
+
+/* Text in Transparent Box */
+div.background {
+  background: url(/exercises/lesson_13/asseds/images/klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Navigation Bar = List of Links */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* Right-aligned Dropdown Content */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Image Gallery */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.center {
+  width: 768px;
+  margin: auto;
+}
   
+/*Styling Forms*/
+/* input[type=text] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+input[type=button] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+} */
+
+/* Bordered Inputs */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color:#3CBC8D;
+  border: 3px solid rgb(255, 172, 172);
+}
+
+/* Input with icon/image */
+.input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('/exercises/lesson_13/asseds/images/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+/* CSS Units */
+h1.h1 {
+  font-size: 60px;
+}
+
+p.p {
+  font-size: 25px;
+  line-height: 50px;
+}

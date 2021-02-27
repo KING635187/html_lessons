@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+    <!-- Navigation Bar = List of Links -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+      </ul>
+    <hr>
+
+    <!--  -->
     <h1 class="decoration">This is heading 1</h1>
     <h2 class="decoration1">This eadis hing 2</h2>
     <h3 class="decoration2">This is heading 3</h3>
@@ -50,10 +61,10 @@
     <!-- White Space -->
     <p class="space">
     This is some text. This is some text. This is some text.
+    <!-- This is some text. This is some text. This is some text.
     This is some text. This is some text. This is some text.
     This is some text. This is some text. This is some text.
-    This is some text. This is some text. This is some text.
-    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text. -->
     </p>
     
     <p>Try to remove the white-space property to see the difference.</p>
@@ -123,8 +134,130 @@
     <br>
 
     <div class="ex2">This div element has max-width: 500px;</div>
+    <hr>
 
+    <!-- Anchor Pseudo-classes -->
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <hr>
+
+    <!-- Multiple Pseudo-elements -->
+    <p class="elements">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+    <hr>
+
+    <!-- CSS - The ::selection Pseudo-element -->
+    <h1>Select some text on this page:</h1>
+
+    <p>This is a paragraph.</p>
+    <div>This is some text in a div element.</div>
+
+    <p><strong>Note:</strong> Firefox supports an alternative, the ::-moz-selection property.</p>
+    <hr>
+
+    <!-- Transparent Hover Effect -->
+    <img src="asseds/images/img_5terre.jpg" alt="Forest" width="170" height="100">
+    <img src="asseds/images/img_forest.jpg" alt="Mountains" width="170" height="100">
+    <img src="asseds/images/img_mountains.jpg" alt="Italy" width="170" height="100">
+    <hr>
+
+    <!-- Text in Transparent Box -->
+    <div class="background">
+        <div class="transbox">
+          <p>This is some text that is placed in the transparent box.</p>
+        </div>
+      </div>
+    <hr>
+
+    <!-- Right-aligned Dropdown Content -->
+    <div class="dropdown" style="float:left;">
+    <button class="dropbtn">Left</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+    </div>
+      
+    <div class="dropdown" style="float:right;">
+    <button class="dropbtn">Right</button>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <!-- Image Gallery -->
+    <div class="center">
+    <div class="gallery">
+    <a target="_blank" href="asseds/images/img_5terre.jpg">
+        <img src="asseds/images/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+      
+    <div class="gallery">
+    <a target="_blank" href="asseds/images/img_forest.jpg">
+    <img src="asseds/images/img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+      
+    <div class="gallery">
+    <a target="_blank" href="asseds/images/img_mountains.jpg">
+        <img src="asseds/images/img_mountains.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
+      
+    <div class="gallery">
+    <a target="_blank" href="asseds/images/img_5terre.jpg">
+        <img src="asseds/images/img_5terre.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+    </div>
     
+    
+    
+    <!-- Styling Forms -->
+        <!-- <form name="input" action="" method="get">
+            Firstname:<input type="text" name="Name" value="Peter" size="20">
+            Lastname:<input type="text" name="Name" value="Griffin" size="20">
+            <input type="button" value="Example Button">
+        </form>
+        <hr> -->
+
+    <!-- Bordered Inputs -->
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <hr>
+
+    <!-- Input with icon/image -->
+    
+    <form>
+        <input class="input"type="text" name="search" placeholder="Search..">
+      </form>
+      </div>
+      <hr>
+      
+    <!-- CSS Units -->
+    <h1 class="h1">This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p class="p">This is a paragraph.</p>
+    <p class="p">This is another paragraph.</p>
+
+
+
 </body>
 </html>
 
