@@ -1,0 +1,65 @@
+div {
+    border: 3px solid #7e7e7e;
+    margin-bottom: 48px;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    left: 30px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 255, 213);
+    z-index: -1;
+    border: none;
+}
+
+.parent-relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+}
+
+.sticky-parent {
+    width: 400px;
+    height: 300px;
+    padding: 12px;
+    overflow: auto;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 12px;
+    background-color: #fac6c6;
+    border: 1px solid rgb(231, 118, 118);
+}
+
+img {
+    position: absolute;
+    clip: rect(0px,50px,200px,0px);
+}
+
+.overflow-div {
+    width: 200px;
+    height: 50px;
+    overflow-y: auto;
+}
