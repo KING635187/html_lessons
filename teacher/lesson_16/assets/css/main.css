@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* flex-flow: row; */
+    /* justify-content: space-between; */
+    align-items: center;
+    /* align-content: space-around; */
+    width: 1200px;
+    /* height: 800px; */
+    margin: 24px auto;
+    background-color: rgb(34, 70, 153);
+}
+
+.flex-container > div {
+    background-color: #fff;
+    border: 5px solid rgb(34, 70, 153);
+    padding: 20px;
+    font-size: 30px;
+    flex-basis: calc(100% / 8);
+}
+
+.flex-container > div:nth-child(3) {
+    height: 200px;
+    /* align-self: flex-end; */
+    /* order: 4; */
+    /* width: 200px; */
+    /* flex-grow: 4; */
+    /* width: auto; */
+}
+
+/* .flex-container > div:nth-child(4) {
+    order: 3;
+} */
+
+
+/*////////////////////////////////////////////////
+/////      Flex Responsive Starts
+////////////////////////////////////////////////*/
+
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px;
+}
+
+.flex-responsive > div {
+    width: calc(100% / 3);
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    padding: 48px;
+    text-align: center;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 992px) {
+    .flex-responsive > div {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 576px) {
+    .flex-responsive > div {
+        width: 100%;
+    }
+}
+
