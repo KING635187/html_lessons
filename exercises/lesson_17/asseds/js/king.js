@@ -103,7 +103,7 @@ try {
     carName = "Volvo";
     let carName;
     document.getElementById("demo16").innerHTML = carName;
-  }
-  catch(err) {
+}
+catch(err) {
     document.getElementById("demo16").innerHTML = err.name + ": " + err.message;
-  }
+}
