@@ -4,18 +4,18 @@ is_string = function(input) {
       return true;
     else
       return false;   
-      };
+    };
 console.log(is_string('w3resource'));
 console.log(is_string([1, 2, 4, 0]));
 
 
 ///////////////////// №2
 is_Blank =  function(input) {
-    if (input.length === 0)
+  if (input.length === 0)
     return true;
-    else 
+  else 
     return false;
-  }
+}
 console.log(is_Blank(''));
 console.log(is_Blank('abc'));
 
@@ -30,11 +30,11 @@ console.log(string_to_array("Robin Singh"));
 ///////////////////// №4
 truncate_string = function (str1, length) {
   
-    if ((str1.constructor === String) && (length>0)) {
+    if ((str1.constructor === String) && (length > 0)) {
         return str1.slice(0, length);
     }
 };
-console.log(truncate_string("Robin Singh",4));
+console.log(truncate_string("Robin Singh", 4));
 
 
 ///////////////////// №5
