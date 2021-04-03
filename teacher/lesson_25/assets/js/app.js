@@ -84,4 +84,4 @@ function min(arr) {
 }
 
 console.log(max(numbers));
-console.log(min(numbers));
+console.log(min(numbers)); 
