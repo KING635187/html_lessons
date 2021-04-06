@@ -1,3 +1,3 @@
-funtion import(Number) {
+funсtion import(Number) {
     document.getElementById("input").innerHTML = document.getElementById("input") + nummer;
 }
