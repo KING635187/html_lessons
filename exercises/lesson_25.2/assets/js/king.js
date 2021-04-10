@@ -1,3 +1,6 @@
+
+
+
 const clearButton = document.getElementById('clear'),
     additionButtons = document.getElementsByClassName('addition'),
     calculateButton = document.getElementById('calculate');
