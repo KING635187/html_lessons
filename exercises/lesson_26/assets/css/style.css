@@ -1,14 +1,20 @@
 body {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     width: 65%;
     margin: auto;
+    
+}
+.border {
+    padding: 30px;
+    border: 2px solid rgb(167, 117, 71);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 h3 {
     padding: 10px;
     background-color: rgb(255, 185, 119);
     border: 2px solid rgb(167, 117, 71);
-    border-radius: 10px;
+    border-radius: 10px 0px 10px 0px;
     font-size: 20px;
     font-family: cursive;
 }
@@ -20,14 +26,14 @@ p {
 button {
     background-color: rgb(255, 185, 119);
     border: 2px solid rgb(167, 117, 71);
-    border-radius: 5px;
+    border-radius: 5px 0px 5px 0px;
     font-family:initial;
     font-size: 15px;
 }
 input {
     background-color: rgb(255, 185, 119);
     border: 2px solid rgb(167, 117, 71);
-    border-radius: 5px;
+    border-radius: 5px 0px 5px 0px;
     font-family:initial;
     font-size: 15px;
 }
