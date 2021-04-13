@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function myFunction() {
+          document.getElementById("demo5").innerHTML = "Paragraph changed.";
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +14,213 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="box">
+    <!-- JavaScript Can Change HTML Content -->
+    <h3>JavaScript Can Change HTML Content</h3>
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <!-- JavaScript Can Change HTML Attribute Values -->
+    <h3>JavaScript Can Change HTML Attribute Values</h3>
+    <button onclick="document.getElementById('myImage').src='assets/img/pic_bulbon.gif'">Turn on the light</button>
+
+    <img id="myImage" src="assets/img/pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='assets/img/pic_bulboff.gif'">Turn off the light</button>
+
+    <!-- JavaScript Can Change HTML Styles (CSS) -->
+    <h3>JavaScript Can Change HTML Styles (CSS)</h3>
+    <p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='20px'">Click Me!</button>
+
+    <!-- JavaScript Can Hide HTML Elements -->
+    <h3>JavaScript Can Hide HTML Elements</h3>
+    <p id="demo2">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+
+    <!-- JavaScript Can Show HTML Elements -->
+    <h3>JavaScript Can Show HTML Elements</h3>
+    <p id="demo3" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+
+    <!-- The <script> Tag -->
+    <h3>The "script" Tag</h3>
+    <p id="demo4"></p>
+
+    <script done>
+    document.getElementById("demo4").innerHTML = "My First JavaScript";
+    </script>
+
+    <!-- JavaScript in <head> -->
+    <h3>JavaScript in head</h3>
+    <p id="demo5">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <!-- Using innerHTML -->
+    <h3>Using innerHTML</h3>
+    <p id="demo6"></p>
+
+    <!-- Using document.write() -->
+    <h3>Using document.write()</h3>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+    <!-- Using window.alert()-->
+    <h3>Using window.alert()</h3>
+    <button type="button" onclick="alert(5 + 6);">Try it</button>
+
+    <!-- Using console.log() -->
+    <h3>Using console.log()</h3>
+    <button type="button" onclick="console.log(5 + 6);">Try it</button>
+
+    <!-- JavaScript Print -->
+    <h3>JavaScript Print</h3>
+    <button onclick="window.print()">Print this page</button>
+
+    <!-- JavaScript Statements -->
+    <h3>JavaScript Statements</h3>
+    <p id="demo7"></p>
+
     <!-- Semicolons ; -->
     <h3>Semicolons ;</h3>
-    <p id="demo"></p>
+    <p id="demo8"></p>
+
+    <!-- JavaScript Line Length and Line Breaks -->
+    <h3>JavaScript Line Length and Line Breaks</h3>
+    <p id="demo9"></p>
+
+    <!-- JavaScript Code Blocks -->
+    <h3>JavaScript Code Blocks</h3>
+    <p id="demo1.1"></p>
+    <p id="demo1.2"></p>
+
+    <!-- JavaScript Variables -->
+    <h3>JavaScript Variables</h3>
+    <p id="demo10"></p>
+
+    <!-- JavaScript Operators -->
+    <h3>JavaScript Operators</h3>
+    <p id="demo11"></p>
+
+    <!-- JavaScript Expressions -->
+    <h3>JavaScript Expressions</h3>
+    <p id="demo12"></p>
+
+    <!-- JavaScript Keywords -->
+    <h3>JavaScript Keywords</h3>
+    <p id="demo13"></p>
+
+    <!-- JavaScript Comments -->
+    <h3>JavaScript Comments</h3>
+    <p id="demo14"></p>
+
+    <!-- JavaScript is Case Sensitive -->
+    <h3>JavaScript is Case Sensitive</h3>
+    <p id="demo15"></p>
+
+    <!-- Single Line Comments -->
+    <h3>Single Line Comments</h3>
+    <p id="demo16"></p>
+
+    <!-- Multi-line Comments -->
+    <h3>Multi-line Comments</h3>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <!-- Much Like Algebra -->
+    <h3>Much Like Algebra</h3>
+    <p id="demo17"></p>
+
+    <!-- JavaScript Data Types -->
+    <h3>JavaScript Data Types</h3>
+    <p id="demo18"></p>
+
+    <!-- Declaring (Creating) JavaScript Variables -->
+    <h3>Declaring (Creating) JavaScript Variables</h3>
+    <p id="demo19"></p>
+
+    <!-- One Statement, Many Variables -->
+    <h3>One Statement, Many Variables</h3>
+    <p id="demo20"></p>
+
+    <!-- Value = undefined -->
+    <h3>Value = undefined</h3>
+    <p id="demo21"></p>
+
+    <!-- Re-Declaring JavaScript Variables -->
+    <h3>Re-Declaring JavaScript Variables</h3>
+    <p id="demo22"></p>
+
+    <!-- JavaScript Arithmetic -->
+    <h3>JavaScript Arithmetic</h3>
+    <p id="demo23"></p>
+
+    <!-- JavaScript Dollar Sign $ -->
+    <h3>JavaScript Dollar Sign $</h3>
+    <p id="demo24"></p>
+
+    <!-- JavaScript Underscore (_) -->
+    <h3>JavaScript Underscore (_)</h3>
+    <p id="demo25"></p>
+
+    <!-- Global Scope -->
+    <h3>Global Scope</h3>
+    <p id="demo26"></p>
+
+    <!-- Function Scope -->
+    <h3>Function Scope</h3>
+    <p id="demo1.3"></p>
+
+    <p id="demo1.4"></p>
+
+    <!-- Redeclaring Variables -->
+    <h3>Redeclaring Variables</h3>
+    <p id="demo1.5"></p>
+
+    <!-- Loop Scope -->
+    <h3>Loop Scope</h3>
+    <p id="demo1.6"></p>
+
+    <!-- Redeclaring -->
+    <h3>Redeclaring</h3>
+    <p id="demo1.7"></p>
+
+    <!-- Hoisting -->
+    <h3>Hoisting</h3>
+    <p id="demo1.8"></p>
+
+    <!-- ECMAScript 2015 -->
+    <h3>ECMAScript 2015</h3>
+    <p id="demo1.9"></p>
+
+    <!-- Block Scope -->
+    <h3>Block Scope</h3>
+    <p id="demo1.10"></p>
+
+    <!-- Constant Objects can Change -->
+    <h3>Constant Objects can Change</h3>
+    <p id="demo1.11"></p>
+
+    <!-- Constant Arrays can Change -->
+    <h3>Constant Arrays can Change</h3>
+    <p id="demo1.12"></p>
+
+    <!-- Hoisting -->
+    <h3>Hoisting</h3>
+    <p id="demo1.13"></p>
+
+    <!-- JavaScript String Operators -->
+    <h3>JavaScript String Operators</h3>
+    <p id="demo1.14"></p>
+
+    <!-- Adding Strings and Numbers -->
+    <h3>Adding Strings and Numbers</h3>
+    <p id="demo1.15"></p>
+
+    </div>
 </body>
 </html>
