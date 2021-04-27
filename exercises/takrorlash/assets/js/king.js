@@ -359,3 +359,87 @@ document.getElementById("demo2.21").innerHTML = 100 / "Apple";
 // Number Properties Cannot be Used on Variables
 var x = 6;
 document.getElementById("demo2.22").innerHTML = x.MAX_VALUE;
+
+// Creating an Array
+var cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo2.23").innerHTML = cars;
+
+// Using the JavaScript Keyword new
+var cars = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo2.24").innerHTML = cars;
+
+// Access the Elements of an Array
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo2.25").innerHTML = cars[0];
+
+// Changing an Array Element
+var cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+document.getElementById("demo2.26").innerHTML = cars;
+
+// Access the Full Array
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo2.27").innerHTML = cars;
+
+// Arrays are Objects
+var person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo2.28").innerHTML = person["firstName"];
+
+// The length Property
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2.29").innerHTML = fruits.length;
+
+// Accessing the First Array Element
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var first = fruits[0];
+document.getElementById("demo2.30").innerHTML = first;
+
+// Accessing the Last Array Element
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var last = fruits[fruits.length-1];
+document.getElementById("demo2.31").innerHTML = last;
+
+// Looping Array Elements
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo2.32").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+
+// Adding Array Elements
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";
+
+fLen = fruits.length;
+text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+document.getElementById("demo2.33").innerHTML = text;
+
+// Associative Arrays
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.getElementById("demo2.34").innerHTML =
+person[0] + " " + person.length;
+
+// Avoid new Array()
+var points = new Array(40);
+document.getElementById("demo2.35").innerHTML = points[0]; 
+
+// How to Recognize an Array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2.36").innerHTML = fruits instanceof Array;
