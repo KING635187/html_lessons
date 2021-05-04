@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/king.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Form Validation -->
+    <h2>JavaScript Form Validation</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- JavaScript Can Validate Numeric Input -->
+    <h2>JavaScript Can Validate Numeric Input</h2>
+    <input id="numb">=
+    <button type="button" onclick="myFunction1()">Submit</button>
+    <p id="demo"></p>
+
+    <!-- Automatic HTML Form Validation -->
+    <h2>Automatic HTML Form Validation</h2>
+    <form action="/action_page.php" method="post">
+        <input type="text" name="fname" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Constraint Validation DOM Methods -->
+    <h2>Constraint Validation DOM Methods</h2>
+    <input id="id1" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+    <p id="demo1"></p>
+
+    <!-- Examples -->
+    <h2>Examples</h2>
+    <input id="id2" type="number" min="100">
+    <button onclick="myFunction2()">OK</button>
+    <p id="demo2"></p>
+</body>
+</html>
