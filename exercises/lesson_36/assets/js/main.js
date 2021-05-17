@@ -22,4 +22,4 @@ if (selected) {
 }
 };
 copy_to_Clipboard('JavaScript basic - Exercises, Practice, Solution');
-  
+      
