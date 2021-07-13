@@ -1,0 +1,25 @@
+p {
+    font-size: 30px;
+    
+}
+
+h2 {
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(255, 153, 0);
+    border: 2px solid rgb(128, 77, 0);
+    border-radius: 8px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(255, 153, 0);
+    border: 2px solid rgb(128, 77, 0);
+    border-radius: 8px;
+}
+
+.center {
+    width: 1000px;
+    margin: auto;
+}

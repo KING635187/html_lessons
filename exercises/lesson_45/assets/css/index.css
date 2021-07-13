@@ -1,0 +1,30 @@
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(154, 0, 192);
+    border: 2px solid rgb(126, 0, 158);
+    border-radius: 26px;
+    transition: width 2s, height 2s, transform 2s;
+    /* transition-delay: 1s; */
+    background-color: rgb(154, 0, 192);
+    animation-name: example;
+    animation-duration: 4s;
+    padding: 10px;
+    margin: 100px;
+}
+    
+/* @keyframes example {
+    from {background-color: rgb(154, 0, 192)    ;}
+    to {background-color: yellow;}
+} */
+
+.div:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(576000deg);
+}
+
+.p {
+    font-size: 50px;
+    color: white;
+}
