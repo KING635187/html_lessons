@@ -8,6 +8,14 @@
         <script src="assets/js/app.js" defer></script>
     </head>
     <body>
+        <form name="myForm" action="/action_page.php" method="POST" onsubmit="return validateForm()"> 
+            Name: <input type="text" name="name" />
+            <input type="submit" value="Submit" />
+        </form>
 
+        <input type="number" id="id1" min="100" max="300" required>
+        <button onclick="myFunction()">OK</button>
+
+        <p id="demo"></p>
     </body>
 </html>
